@@ -90,3 +90,120 @@
     gap: 10px;
     align-items: center;
 }
+
+/* Booking Section */
+/* Booking Section */
+.booking-section {
+    width: 100%;
+    margin-top: 90px; /* Kept top margin */
+    padding: 60px 0; /* More vertical padding */
+    background: linear-gradient(90deg, #FFD1A6 0%, #FFB67A 100%); /* Peachy gradient */
+    font-family: sans-serif;
+}
+
+.booking-content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Inner padding for smaller screens */
+}
+
+.booking-title {
+    text-align: center;
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.booking-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Form Container */
+.booking-form-container {
+    flex: 1; /* Takes up remaining space */
+    background-color: rgba(255, 235, 215, 0.7); /* Light semi-transparent bg */
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.booking-form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4a4a4a;
+}
+
+.form-group input,
+.form-group select {
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 14px;
+    color: #666;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+.form-group input::placeholder {
+    color: #b0b0b0;
+}
+
+/* Submit Button */
+.form-submit {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.book-btn {
+    background-color: #FA8B02;
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.book-btn:hover {
+    background-color: #e07b00;
+}
+
+/* Image Container */
+.booking-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking-image-container img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
