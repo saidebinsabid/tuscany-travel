@@ -170,63 +170,62 @@
       <!-- Book Now Bike Section -->
       <section class="booking-section">
          <div class="booking-content-wrapper">
-            <h1 class="booking-title">Book Now Bike</h1>
-
             <div class="booking-container">
-               <!-- Left Side: Form -->
-               <div class="booking-form-container">
-                  <form action="">
-                     <div class="form-grid">
-                        <!-- Name and Surname -->
-                        <div class="form-group">
-                           <label for="name">Name and Surname</label>
-                           <input type="text" id="name" placeholder="Enter your name and surname">
-                        </div>
+               <!-- Left Side: Form Section -->
+               <div class="booking-left-side">
+                  <h1 class="booking-title">Book Now Bike</h1>
+                  <div class="booking-form-container">
+                     <form action="">
+                        <div class="form-grid">
+                           <!-- Name and Surname -->
+                           <div class="form-group">
+                              <label for="name">Name and Surname</label>
+                              <input type="text" id="name" placeholder="Enter your name and surname">
+                           </div>
+                           <div class="form-group">
+                              <label for="email">Email Address</label>
+                              <input type="email" id="email" placeholder="Enter your email address">
+                           </div>
 
-                        <!-- Email Address -->
-                        <div class="form-group">
-                           <label for="email">Email Address</label>
-                           <input type="email" id="email" placeholder="Enter your email address">
-                        </div>
+                           <!-- Telephone Number -->
+                           <div class="form-group">
+                              <label for="phone">Telephone Number</label>
+                              <input type="tel" id="phone" placeholder="Enter your telephone number">
+                           </div>
 
-                        <!-- Telephone Number -->
-                        <div class="form-group">
-                           <label for="phone">Telephone Number</label>
-                           <input type="tel" id="phone" placeholder="Enter your telephone number">
-                        </div>
+                           <!-- Service Type -->
+                           <div class="form-group">
+                              <label for="service">Service Type</label>
+                              <select id="service">
+                                 <option value="" disabled selected>Select the service types</option>
+                                 <option value="bike-rental">Bike Rental</option>
+                                 <option value="guided-tour">Guided Tour</option>
+                              </select>
+                           </div>
 
-                        <!-- Service Type -->
-                        <div class="form-group">
-                           <label for="service">Service Type</label>
-                           <select id="service">
-                              <option value="" disabled selected>Select the service types</option>
-                              <option value="bike-rental">Bike Rental</option>
-                              <option value="guided-tour">Guided Tour</option>
-                           </select>
-                        </div>
+                           <!-- Date -->
+                           <div class="form-group">
+                              <label for="date">Date</label>
+                              <div class="input-with-icon">
+                                 <input type="date" id="date" placeholder="Select the date">
+                                 <!-- Icon handled by type="date" in modern browsers or background image -->
+                              </div>
+                           </div>
 
-                        <!-- Date -->
-                        <div class="form-group">
-                           <label for="date">Date</label>
-                           <div class="input-with-icon">
-                              <input type="date" id="date" placeholder="Select the date">
-                              <!-- Icon handled by type="date" in modern browsers or background image -->
+                           <!-- Time -->
+                           <div class="form-group">
+                              <label for="time">Time</label>
+                              <div class="input-with-icon">
+                                 <input type="time" id="time" placeholder="Select the time">
+                              </div>
                            </div>
                         </div>
 
-                        <!-- Time -->
-                        <div class="form-group">
-                           <label for="time">Time</label>
-                           <div class="input-with-icon">
-                              <input type="time" id="time" placeholder="Select the time">
-                           </div>
+                        <div class="form-submit">
+                           <button type="submit" class="book-btn">Book Now</button>
                         </div>
-                     </div>
-
-                     <div class="form-submit">
-                        <button type="submit" class="book-btn">Book Now</button>
-                     </div>
-                  </form>
+                     </form>
+                  </div>
                </div>
 
                <!-- Right Side: Image -->
