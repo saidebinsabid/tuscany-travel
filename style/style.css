@@ -36,10 +36,20 @@
 .register-link {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     font-weight: 400;
     color: var(--white, rgba(255, 255, 255, 1));
     font-size: 20px;
+}
+
+.register-link a {
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.3s ease;
+}
+
+.register-link a:hover {
+    opacity: 0.8;
 }
 
 #sign-up {
