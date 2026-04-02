@@ -1,0 +1,189 @@
+/* =============================================
+   LOGIN PAGE STYLES (Dark Mode - Eye Comfort)
+   ============================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- Dark Warm Gradient Background --- */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #0d0d0d 0%, #1a1008 45%, #2a1a00 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* --- Glassmorphism Card (Soft on the eyes) --- */
+.login-container {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(250, 139, 2, 0.18);
+    border-radius: 20px;
+    padding: 50px 45px;
+    width: 100%;
+    max-width: 430px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+}
+
+/* --- Logo & Header --- */
+.login-logo {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.login-logo .icon-circle {
+    width: 68px;
+    height: 68px;
+    background: linear-gradient(135deg, #fa8b02, #c86b00);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 14px;
+    box-shadow: 0 8px 28px rgba(250, 139, 2, 0.4);
+}
+
+.login-logo .icon-circle svg {
+    width: 32px;
+    height: 32px;
+    fill: #ffffff;
+}
+
+.login-logo h1 {
+    font-size: 26px;
+    color: #ffffff;
+}
+
+.login-logo p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.45);
+    margin-top: 5px;
+}
+
+/* --- Form Fields --- */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.55);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.input-wrapper .input-icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.25);
+    font-size: 16px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 13px 14px 13px 42px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1.5px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 15px;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #fa8b02;
+    background: rgba(250, 139, 2, 0.06);
+}
+
+/* --- Options Row --- */
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 13px;
+}
+
+.remember-me input {
+    accent-color: #fa8b02;
+}
+
+.forgot-link {
+    font-size: 13px;
+    color: #fa8b02;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* --- Login Button --- */
+.btn-login {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #fa8b02, #c86b00);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 8px 24px rgba(250, 139, 2, 0.35);
+}
+
+.btn-login:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 32px rgba(250, 139, 2, 0.45);
+}
+
+/* --- Bottom Redirect --- */
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 26px 0;
+}
+
+.divider hr {
+    flex: 1;
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.divider span {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.register-redirect {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 14px;
+}
+
+.register-redirect a {
+    color: #fa8b02;
+    font-weight: bold;
+    text-decoration: none;
+}

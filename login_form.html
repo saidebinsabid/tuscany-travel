@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Login to your account securely." />
+  <title>Login — Tuscany Travel</title>
+  <link rel="stylesheet" href="style/login.css" />
+</head>
+<body>
+
+  <div class="login-container">
+
+    <!-- Logo / Header -->
+    <div class="login-logo">
+      <div class="icon-circle">
+        <!-- User icon (SVG) -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/>
+        </svg>
+      </div>
+      <h1>Welcome Back</h1>
+      <p>Sign in to continue your journey</p>
+    </div>
+
+    <!-- Login Form -->
+    <form id="loginForm" action="#" method="POST" novalidate>
+
+      <!-- Email -->
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <div class="input-wrapper">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="you@example.com"
+            autocomplete="email"
+            required
+          />
+          <span class="input-icon">&#9993;</span>
+        </div>
+      </div>
+
+      <!-- Password -->
+      <div class="form-group">
+        <label for="password">Password</label>
+        <div class="input-wrapper">
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+            autocomplete="current-password"
+            required
+          />
+          <span class="input-icon">&#128274;</span>
+        </div>
+      </div>
+
+      <!-- Remember Me / Forgot Password -->
+      <div class="form-options">
+        <label class="remember-me">
+          <input type="checkbox" id="remember" name="remember" />
+          <span>Remember me</span>
+        </label>
+        <a href="#" class="forgot-link">Forgot password?</a>
+      </div>
+
+      <!-- Submit -->
+      <button type="submit" class="btn-login" id="loginBtn">Sign In</button>
+
+    </form>
+
+    <!-- Divider -->
+    <div class="divider">
+      <hr />
+      <span>Don't have an account?</span>
+      <hr />
+    </div>
+
+    <!-- Register redirect link -->
+    <div class="register-redirect">
+      <p>New here? <a href="register_form.html">Create an account</a></p>
+    </div>
+
+  </div>
+
+</body>
+</html>

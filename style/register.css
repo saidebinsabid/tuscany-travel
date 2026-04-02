@@ -1,0 +1,218 @@
+/* =============================================
+   REGISTER PAGE STYLES (Dark Mode - Eye Comfort)
+   ============================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- Dark Warm Gradient Background --- */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #080808 0%, #110d00 40%, #1e1200 80%, #2a1a00 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+}
+
+/* --- Glassmorphism Card (Soft on the eyes) --- */
+.register-container {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(250, 139, 2, 0.18);
+    border-radius: 20px;
+    padding: 48px 45px;
+    width: 100%;
+    max-width: 480px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.65);
+}
+
+/* --- Logo & Header --- */
+.register-logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.register-logo .icon-circle {
+    width: 68px;
+    height: 68px;
+    background: linear-gradient(135deg, #fa8b02, #c86b00);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 14px;
+    box-shadow: 0 8px 28px rgba(250, 139, 2, 0.4);
+}
+
+.register-logo .icon-circle svg {
+    width: 32px;
+    height: 32px;
+    fill: #ffffff;
+}
+
+.register-logo h1 {
+    font-size: 26px;
+    color: #ffffff;
+}
+
+.register-logo p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.45);
+    margin-top: 5px;
+}
+
+/* --- Form Fields --- */
+.form-row {
+    display: flex;
+    gap: 14px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.55);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.input-wrapper .input-icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.25);
+    font-size: 16px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 14px 12px 42px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1.5px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 15px;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #fa8b02;
+    background: rgba(250, 139, 2, 0.06);
+}
+
+/* --- Password Strength --- */
+.password-strength {
+    margin-top: 8px;
+}
+
+.strength-bar {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 4px;
+}
+
+.strength-bar span {
+    flex: 1;
+    height: 4px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.strength-label {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.35);
+}
+
+/* --- Terms Checkbox --- */
+.terms-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 26px;
+}
+
+.terms-group input {
+    accent-color: #fa8b02;
+    margin-top: 2px;
+}
+
+.terms-group span {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.5;
+}
+
+.terms-group span a {
+    color: #fa8b02;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* --- Register Button --- */
+.btn-register {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #fa8b02, #c86b00);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 8px 24px rgba(250, 139, 2, 0.35);
+}
+
+.btn-register:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 32px rgba(250, 139, 2, 0.45);
+}
+
+/* --- Bottom Redirect --- */
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 24px 0;
+}
+
+.divider hr {
+    flex: 1;
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.divider span {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.login-redirect {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 14px;
+}
+
+.login-redirect a {
+    color: #fa8b02;
+    font-weight: bold;
+    text-decoration: none;
+}
