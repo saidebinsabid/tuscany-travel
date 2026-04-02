@@ -119,11 +119,6 @@
     flex: 1;
 }
 
-.about-image img {
-    width: 105%; /* Slightly larger to match relative size in screenshot */
-    height: auto;
-}
-
 .about-content {
     flex: 1.2;
 }
@@ -176,18 +171,4 @@
     color: #888;
     line-height: 1.4;
     font-family: sans-serif;
-}
-
-/* Responsive adjustments */
-@media (max-width: 992px) {
-    .about-section {
-        flex-direction: column;
-        text-align: center;
-        gap: 40px;
-    }
-    
-    .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-    }
 }
