@@ -1,199 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tuscany Travel</title>
-    <!-- CSS is now in the style/ folder -->
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tuscany Travel</title>
+   <!-- CSS is now in the style/ folder -->
+   <link rel="stylesheet" href="style/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <header>
-        <nav class="navabr-container">
-            <!-- Icon -->
+   <header>
+      <nav class="navabr-container">
+         <!-- Icon -->
+         <div>
+            <img src="assets/logo.png" alt="logo" width="80">
+         </div>
+         <!-- Links -->
+         <div>
+            <ul class="nav-link">
+               <li><a href="#">Home</a></li>
+               <li><a href="about_us.html">About Us</a></li>
+               <li><a href="">Tour Packages</a></li>
+               <li><a href="">Contact Us</a></li>
+            </ul>
+         </div>
+         <!-- Register -->
+         <div class="register-link">
+            <!-- Links to login_form.html -->
+            <a href="login_form.html"><span>Login</span></a>
+            <a href="register_form.html"><span id="sign-up">Sign Up</span></a>
+         </div>
+      </nav>
+      <!-- Banner -->
+      <div>
+         <img src="assets/banner.png" alt="banner-image">
+      </div>
+   </header>
+
+   <main>
+      <!-- Popular Destination -->
+      <section class="wrapper">
+         <!-- Header -->
+         <div class="des_header-conatiner">
+            <h1>Explore Our Popular Destinantions </h1>
+
+            <!-- Arrow Icons -->
+            <div class="arrows">
+               <i class="fa-solid fa-less-than less-than"></i>
+               <i class="fa-solid fa-greater-than greater-than"></i>
+            </div>
+         </div>
+
+         <!-- All Card -->
+         <div class="package-card">
+            <!-- Card-1 -->
             <div>
-                <img src="assets/logo.png" alt="logo" width="80">
+               <img src="assets/package-1.png" alt="destination-1">
+               <h2 style="font-size: 24px;">Lucca Bike Tour</h2>
+               <!-- price -->
+               <div class="pricing">
+                  <p style="font-size: 18px; color: var(--black, rgba(51, 51, 51, 1));">from</p>
+                  <span style="font-size: 24px; color: var(--Orange, rgba(250, 139, 2, 1)); font-weight: bolder;">34
+                     €</span>
+               </div>
+
+               <!-- Details -->
+               <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <!-- Calender -->
+                  <div style="display: flex; align-items: center; color: #FA8B02; gap: 5px;">
+                     <i class="fa-solid fa-calendar-days"></i>
+                     <span style="font-size: 13px;">EVERY DAY</span>
+                  </div>
+                  <!-- Persons Details -->
+                  <div
+                     style="display: flex; align-items: center; gap: 5px; color: var(--Orange, rgba(250, 139, 2, 1));">
+                     <img src="assets/persons_icons.png" alt="persons-icons">
+                     <span>3-10 PP</span>
+                  </div>
+               </div>
+               <p>A tour of the city and its surroundings led by a professional guide ...</p>
             </div>
-            <!-- Links -->
+            <!-- Card-2 -->
             <div>
-                <ul class="nav-link">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Tour Packages</a></li>
-                    <li><a href="">Contact Us</a></li>
-                </ul>
+               <img src="assets/package-2.png" alt="destination-1">
+               <h2 style="font-size: 24px;">Wine tasting In Tuscany</h2>
+               <!-- price -->
+               <div class="pricing">
+                  <p style="font-size: 18px; color: var(--black, rgba(51, 51, 51, 1));">from</p>
+                  <span style="font-size: 24px; color: var(--Orange, rgba(250, 139, 2, 1)); font-weight: bolder;">34
+                     €</span>
+               </div>
+
+               <!-- Details -->
+               <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <!-- Calender -->
+                  <div style="display: flex; align-items: center; color: #FA8B02; gap: 5px;">
+                     <i class="fa-solid fa-calendar-days"></i>
+                     <span style="font-size: 13px;">EVERY DAY</span>
+                  </div>
+                  <!-- Persons Details -->
+                  <div
+                     style="display: flex; align-items: center; gap: 5px; color: var(--Orange, rgba(250, 139, 2, 1));">
+                     <img src="assets/persons_icons.png" alt="persons-icons">
+                     <span>3-10 PP</span>
+                  </div>
+               </div>
+               <p>The real magic is here where you can enjoy the best Tuscan wine and eat ...</p>
             </div>
-            <!-- Register -->
-             <div class="register-link">
-                <!-- Links to login_form.html -->
-                <a href="login_form.html"><span>Login</span></a>
-                <span id="sign-up">Sign Up</span>
-             </div>
-        </nav>
-        <!-- Banner -->
-        <div>
-            <img src="assets/banner.png" alt="banner-image">
-        </div>
-    </header>
+            <!-- Card-3 -->
+            <div>
+               <img src="assets/package-3.png" alt="destination-1">
+               <h2 style="font-size: 24px;">Cinque Terre Tour</h2>
+               <!-- price -->
+               <div class="pricing">
+                  <p style="font-size: 18px; color: var(--black, rgba(51, 51, 51, 1));">from</p>
+                  <span style="font-size: 24px; color: var(--Orange, rgba(250, 139, 2, 1)); font-weight: bolder;">34
+                     €</span>
+               </div>
 
-    <main>
-        <!-- Popular Destination -->
-        <section class="wrapper">
-           <!-- Header -->
-           <div class="des_header-conatiner">
-              <h1>Explore Our Popular Destinantions </h1>
-  
-              <!-- Arrow Icons -->
-              <div class="arrows">
-                 <i class="fa-solid fa-less-than less-than"></i>
-                 <i class="fa-solid fa-greater-than greater-than"></i>
-              </div>
-           </div>
-  
-           <!-- All Card -->
-           <div class="package-card">
-              <!-- Card-1 -->
-              <div>
-                 <img src="assets/package-1.png" alt="destination-1">
-                 <h2 style="font-size: 24px;">Lucca Bike Tour</h2>
-                 <!-- price -->
-                 <div class="pricing">
-                    <p style="font-size: 18px; color: var(--black, rgba(51, 51, 51, 1));">from</p>
-                    <span style="font-size: 24px; color: var(--Orange, rgba(250, 139, 2, 1)); font-weight: bolder;">34 €</span>
-                 </div>
-  
-                 <!-- Details -->
-                 <div style="display: flex; justify-content: space-between; align-items: center;">
-                    <!-- Calender -->
-                    <div style="display: flex; align-items: center; color: #FA8B02; gap: 5px;">
-                       <i class="fa-solid fa-calendar-days"></i>
-                       <span style="font-size: 13px;">EVERY DAY</span>
-                    </div>
-                    <!-- Persons Details -->
-                    <div style="display: flex; align-items: center; gap: 5px; color: var(--Orange, rgba(250, 139, 2, 1));">
-                       <img src="assets/persons_icons.png" alt="persons-icons">
-                       <span>3-10 PP</span>
-                    </div>
-                 </div>
-                 <p>A tour of the city and its surroundings led by a professional guide ...</p>
-              </div>
-              <!-- Card-2 -->
-              <div>
-                 <img src="assets/package-2.png" alt="destination-1">
-                 <h2 style="font-size: 24px;">Wine tasting In Tuscany</h2>
-                 <!-- price -->
-                 <div class="pricing">
-                    <p style="font-size: 18px; color: var(--black, rgba(51, 51, 51, 1));">from</p>
-                    <span style="font-size: 24px; color: var(--Orange, rgba(250, 139, 2, 1)); font-weight: bolder;">34 €</span>
-                 </div>
-  
-                 <!-- Details -->
-                 <div style="display: flex; justify-content: space-between; align-items: center;">
-                    <!-- Calender -->
-                    <div style="display: flex; align-items: center; color: #FA8B02; gap: 5px;">
-                       <i class="fa-solid fa-calendar-days"></i>
-                       <span style="font-size: 13px;">EVERY DAY</span>
-                    </div>
-                    <!-- Persons Details -->
-                    <div style="display: flex; align-items: center; gap: 5px; color: var(--Orange, rgba(250, 139, 2, 1));">
-                       <img src="assets/persons_icons.png" alt="persons-icons">
-                       <span>3-10 PP</span>
-                    </div>
-                 </div>
-                 <p>The real magic is here where you can enjoy the best Tuscan wine and eat ...</p>
-              </div>
-              <!-- Card-3 -->
-              <div>
-                 <img src="assets/package-3.png" alt="destination-1">
-                 <h2 style="font-size: 24px;">Cinque Terre Tour</h2>
-                 <!-- price -->
-                 <div class="pricing">
-                    <p style="font-size: 18px; color: var(--black, rgba(51, 51, 51, 1));">from</p>
-                    <span style="font-size: 24px; color: var(--Orange, rgba(250, 139, 2, 1)); font-weight: bolder;">34 €</span>
-                 </div>
-  
-                 <!-- Details -->
-                 <div style="display: flex; justify-content: space-between; align-items: center;">
-                    <!-- Calender -->
-                    <div style="display: flex; align-items: center; color: #FA8B02; gap: 5px;">
-                       <i class="fa-solid fa-calendar-days"></i>
-                       <span style="font-size: 13px;">EVERY DAY</span>
-                    </div>
-                    <!-- Persons Details -->
-                    <div style="display: flex; align-items: center; gap: 5px; color: var(--Orange, rgba(250, 139, 2, 1));">
-                       <img src="assets/persons_icons.png" alt="persons-icons">
-                       <span>3-10 PP</span>
-                    </div>
-                 </div>
-                 <p>Visiting the 5 Terre is a must, and you can never go there enough ...</p>
-              </div>
-              <!-- Card-4 -->
-              <div>
-                 <img src="assets/package-3.png" alt="destination-1">
-                 <h2 style="font-size: 24px;">Siena and Surroundings</h2>
-                 <!-- price -->
-                 <div class="pricing">
-                    <p style="font-size: 18px; color: var(--black, rgba(51, 51, 51, 1));">from</p>
-                    <span style="font-size: 24px; color: var(--Orange, rgba(250, 139, 2, 1)); font-weight: bolder;">34 €</span>
-                 </div>
-  
-                 <!-- Details -->
-                 <div style="display: flex; justify-content: space-between; align-items: center;">
-                    <!-- Calender -->
-                    <div style="display: flex; align-items: center; color: #FA8B02; gap: 5px;">
-                       <i class="fa-solid fa-calendar-days"></i>
-                       <span style="font-size: 13px;">EVERY DAY</span>
-                    </div>
-                    <!-- Persons Details -->
-                    <div style="display: flex; align-items: center; gap: 5px; color: var(--Orange, rgba(250, 139, 2, 1));">
-                       <img src="assets/persons_icons.png" alt="persons-icons">
-                       <span>3-10 PP</span>
-                    </div>
-                 </div>
-                 <p>Visit the beautiful Siena and the cities that surround it to experience ...</p>
-              </div>
-           </div>
-  
-        </section>
+               <!-- Details -->
+               <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <!-- Calender -->
+                  <div style="display: flex; align-items: center; color: #FA8B02; gap: 5px;">
+                     <i class="fa-solid fa-calendar-days"></i>
+                     <span style="font-size: 13px;">EVERY DAY</span>
+                  </div>
+                  <!-- Persons Details -->
+                  <div
+                     style="display: flex; align-items: center; gap: 5px; color: var(--Orange, rgba(250, 139, 2, 1));">
+                     <img src="assets/persons_icons.png" alt="persons-icons">
+                     <span>3-10 PP</span>
+                  </div>
+               </div>
+               <p>Visiting the 5 Terre is a must, and you can never go there enough ...</p>
+            </div>
+            <!-- Card-4 -->
+            <div>
+               <img src="assets/package-3.png" alt="destination-1">
+               <h2 style="font-size: 24px;">Siena and Surroundings</h2>
+               <!-- price -->
+               <div class="pricing">
+                  <p style="font-size: 18px; color: var(--black, rgba(51, 51, 51, 1));">from</p>
+                  <span style="font-size: 24px; color: var(--Orange, rgba(250, 139, 2, 1)); font-weight: bolder;">34
+                     €</span>
+               </div>
 
-        <!-- About Our Site Section -->
-        <section class="about-section wrapper">
-            <!-- Left Side: Image -->
-            <div class="about-image">
-                <img src="assets/about_Picture.png" alt="Welcome to Tuscany Travel">
+               <!-- Details -->
+               <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <!-- Calender -->
+                  <div style="display: flex; align-items: center; color: #FA8B02; gap: 5px;">
+                     <i class="fa-solid fa-calendar-days"></i>
+                     <span style="font-size: 13px;">EVERY DAY</span>
+                  </div>
+                  <!-- Persons Details -->
+                  <div
+                     style="display: flex; align-items: center; gap: 5px; color: var(--Orange, rgba(250, 139, 2, 1));">
+                     <img src="assets/persons_icons.png" alt="persons-icons">
+                     <span>3-10 PP</span>
+                  </div>
+               </div>
+               <p>Visit the beautiful Siena and the cities that surround it to experience ...</p>
+            </div>
+         </div>
+
+      </section>
+
+      <!-- About Our Site Section -->
+      <section class="about-section wrapper">
+         <!-- Left Side: Image -->
+         <div class="about-image">
+            <img src="assets/about_Picture.png" alt="Welcome to Tuscany Travel">
+         </div>
+
+         <!-- Right Side: Content -->
+         <div class="about-content">
+            <p class="sub-title">WELCOME TO OUR SITE!</p>
+            <h1 class="main-title">We are the best company for your visit</h1>
+            <p class="description">
+               After decades of experience, and a whole life in Lucca, we offer you the most complete tourism service in
+               the city. In addition to having bikes and rickshaws to have as much fun as you want, you have the choice
+               of tour guides with whom to tour and drivers for your every need! We offer packages in the way that you
+               get the most at the lowest price. Book with us and we will always be available for you!
+            </p>
+
+            <!-- Statistics Grid -->
+            <div class="stats-grid">
+               <div class="stat-item">
+                  <h2>20+</h2>
+                  <p>Years Experience</p>
+               </div>
+               <div class="stat-item">
+                  <h2>100+</h2>
+                  <p>Happy Customer</p>
+               </div>
+               <div class="stat-item">
+                  <h2>15+</h2>
+                  <p>Choice of Services</p>
+               </div>
+               <div class="stat-item">
+                  <h2>10+</h2>
+                  <p>Professional Guides</p>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Popular Packages Section -->
+      <section class="popular-packages wrapper">
+         <h1 class="main-title" style="margin-bottom: 30px;">The Most Popular Packages</h1>
+
+         <div class="packages-grid">
+            <!-- Card 1 -->
+            <div class="pkg-card">
+               <img src="assets/rickshaw.webp" alt="Bike / Rickshaw">
+               <div class="pkg-content">
+                  <h3>BIKE / RICKSHAW</h3>
+                  <div class="pkg-price">
+                     <span class="currency">€</span>
+                     <span class="amount">10</span>
+                     <span class="duration">/day</span>
+                  </div>
+                  <ul class="pkg-features">
+                     <li><i class="fa-regular fa-calendar" style="color: #FA8B02;"></i> Your bike for a day</li>
+                     <li><i class="fa-solid fa-map-location-dot" style="color: #FA8B02;"></i> City App</li>
+                     <li><i class="fa-solid fa-ticket" style="color: #FA8B02;"></i> Discount on Rickshaw</li>
+                     <li><i class="fa-solid fa-headset" style="color: #FA8B02;"></i> Guaranteed Support</li>
+                  </ul>
+                  <button class="book-btn">Book Now</button>
+               </div>
             </div>
 
-            <!-- Right Side: Content -->
-            <div class="about-content">
-                <p class="sub-title">WELCOME TO OUR SITE!</p>
-                <h1 class="main-title">We are the best company for your visit</h1>
-                <p class="description">
-                    After decades of experience, and a whole life in Lucca, we offer you the most complete tourism service in the city. In addition to having bikes and rickshaws to have as much fun as you want, you have the choice of tour guides with whom to tour and drivers for your every need! We offer packages in the way that you get the most at the lowest price. Book with us and we will always be available for you!
-                </p>
-
-                <!-- Statistics Grid -->
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <h2>20+</h2>
-                        <p>Years Experience</p>
-                    </div>
-                    <div class="stat-item">
-                        <h2>100+</h2>
-                        <p>Happy Customer</p>
-                    </div>
-                    <div class="stat-item">
-                        <h2>15+</h2>
-                        <p>Choice of Services</p>
-                    </div>
-                    <div class="stat-item">
-                        <h2>10+</h2>
-                        <p>Professional Guides</p>
-                    </div>
-                </div>
+            <!-- Card 2 -->
+            <div class="pkg-card">
+               <img src="assets/bike.jpg" alt="Bike Tours">
+               <div class="pkg-content">
+                  <h3>BIKE TOURS</h3>
+                  <div class="pkg-price">
+                     <span class="currency">€</span>
+                     <span class="amount">30</span>
+                     <span class="duration">/day</span>
+                  </div>
+                  <ul class="pkg-features">
+                     <li><i class="fa-solid fa-person-biking" style="color: #FA8B02;"></i> A Mountain Bike Included</li>
+                     <li><i class="fa-solid fa-user-group" style="color: #FA8B02;"></i> A Guide For You</li>
+                     <li><i class="fa-solid fa-bottle-water" style="color: #FA8B02;"></i> Bottle of water</li>
+                     <li><i class="fa-solid fa-headset" style="color: #FA8B02;"></i> Guaranteed Support</li>
+                  </ul>
+                  <button class="book-btn">Book Now</button>
+               </div>
             </div>
-        </section>
 
-    </main>
+            <!-- Card 3 -->
+            <div class="pkg-card">
+               <img src="assets/bus.jpg" alt="Bus Trips">
+               <div class="pkg-content">
+                  <h3>BUS TRIPS</h3>
+                  <div class="pkg-price">
+                     <span class="currency">€</span>
+                     <span class="amount">45</span>
+                     <span class="duration">/day</span>
+                  </div>
+                  <ul class="pkg-features">
+                     <li><i class="fa-solid fa-ticket" style="color: #FA8B02;"></i> Park ticket</li>
+                     <li><i class="fa-solid fa-bus" style="color: #FA8B02;"></i> Return bus</li>
+                     <li><i class="fa-solid fa-user-group" style="color: #FA8B02;"></i> Companion</li>
+                     <li><i class="fa-solid fa-headset" style="color: #FA8B02;"></i> Guaranteed Support</li>
+                  </ul>
+                  <button class="book-btn">Book Now</button>
+               </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="pkg-card">
+               <img src="assets/car.jpg" alt="Transfer">
+               <div class="pkg-content">
+                  <h3>TRANSFER</h3>
+                  <div class="pkg-price">
+                     <span class="currency">€</span>
+                     <span class="amount">10</span>
+                     <span class="duration">/day</span>
+                  </div>
+                  <ul class="pkg-features">
+                     <li><i class="fa-solid fa-user-tie" style="color: #FA8B02;"></i> Personal Driver</li>
+                     <li><i class="fa-solid fa-map-pin" style="color: #FA8B02;"></i> Wherever You Want</li>
+                     <li><i class="fa-solid fa-tags" style="color: #FA8B02;"></i> At the best price</li>
+                     <li><i class="fa-solid fa-headset" style="color: #FA8B02;"></i> Guaranteed Support</li>
+                  </ul>
+                  <button class="book-btn">Book Now</button>
+               </div>
+            </div>
+         </div>
+      </section>
+
+   </main>
+
+   <!-- Footer Area -->
+   <footer class="site-footer">
+      <div class="footer-wrapper">
+         <!-- Top Logo -->
+         <div class="footer-logo">
+            <img src="assets/logo.png" alt="Tours to Tuscany Logo" width="120">
+         </div>
+
+         <!-- Footer Columns -->
+         <div class="footer-columns">
+            <!-- Column 1 -->
+            <div class="footer-col">
+               <h4>Services</h4>
+               <ul>
+                  <li><a href="#">Bike and Rickshaw rental</a></li>
+                  <li><a href="#">Guided Tours of Lucca</a></li>
+                  <li><a href="#">Guided Bike Tour of Lucca</a></li>
+                  <li><a href="#">Trip In The Tuscan Hills</a></li>
+                  <li><a href="#">Transportation With Luxury Cars</a></li>
+                  <li><a href="#">Wine Tours By Bus With Guide</a></li>
+               </ul>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="footer-col">
+               <h4>Home</h4>
+               <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Tour Packages</a></li>
+               </ul>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="footer-col">
+               <h4>Help</h4>
+               <ul>
+                  <li><a href="#">Terms of Use</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+               </ul>
+            </div>
+
+            <!-- Column 4 -->
+            <div class="footer-col">
+               <h4>Contacts</h4>
+               <ul class="contacts-list">
+                  <li><i class="fa-solid fa-location-dot"></i> Piazza Napoleone, Lucca, Tuscany</li>
+                  <li><i class="fa-solid fa-phone"></i> +39 346 368 5708</li>
+                  <li><i class="fa-solid fa-envelope"></i> italiainlimo@gmail.com</li>
+               </ul>
+            </div>
+
+            <!-- Column 5 -->
+            <div class="footer-col">
+               <h4>Social Media</h4>
+               <div class="social-icons">
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+               </div>
+            </div>
+         </div>
+
+         <!-- Bottom Copyright line -->
+         <div class="footer-bottom">
+            <p>Copyright Saide Bin Sabid © 2026. All rights reserved.</p>
+         </div>
+      </div>
+   </footer>
 </body>
+
 </html>

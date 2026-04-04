@@ -1,0 +1,119 @@
+/* About Us Page Specific Styles */
+
+.about-main {
+    padding-top: 140px; /* offset for fixed navbar since there's no banner here */
+}
+
+/* About Page Top Section */
+.about-page-top {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 80px;
+}
+
+.about-page-top .about-image {
+    flex: 1;
+}
+
+.about-page-top .about-image img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.about-page-top .about-content {
+    flex: 1.2;
+}
+
+.about-page-top .sub-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #999;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+.about-page-top .main-title {
+    font-size: 34px;
+    font-weight: 800;
+    color: #333;
+    line-height: 1.4;
+    margin-bottom: 25px;
+    font-family: sans-serif;
+}
+
+.about-page-top .description {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 40px;
+    font-family: sans-serif;
+}
+
+/* Stat Grid for About Us Page */
+.about-page-top .stats-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.about-page-top .stat-item {
+    flex: 1;
+}
+
+.about-page-top .stat-item h2 {
+    font-size: 28px;
+    font-weight: 800;
+    color: #FA8B02;
+    margin-bottom: 8px;
+    font-family: sans-serif;
+}
+
+.about-page-top .stat-item p {
+    font-size: 13px;
+    color: #888;
+    line-height: 1.4;
+    font-family: sans-serif;
+}
+
+
+/* Orange Features Section Below */
+.about-features-bg {
+    /* Soft peach to orange gradient */
+    background: linear-gradient(to bottom, #FFEAD4 0%, #FBB379 100%);
+    padding: 10px 0;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.feature-card {
+    flex: 1;
+    background: rgba(255, 230, 204, 0.4); /* Light semi-transparent peach background */
+    border-radius: 15px;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.feature-card i {
+    font-size: 45px;
+    color: #FA8B02; /* Primary Orange */
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #333;
+    line-height: 1.5;
+}
